@@ -7,9 +7,7 @@
     }
   ],
   "env": {
-    "MONGO_URI": "@mongo-uri",    
-    "GMAIL_USER": "@gmail-user",  
-    "GMAIL_PASS": "@gmail-pass",  
+    "MONGO_URI": "mongodb+srv://bindhu:password@cluster0.mongodb.net/passkey?retryWrites=true&w=majority",     
     "PORT": "5000"
   },
   "routes": [
