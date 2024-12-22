@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/index.js",  
+      "use": "@vercel/node"        
+    }
+  ],
+  "env": {
+    "MONGO_URI": "@mongo-uri",    
+    "GMAIL_USER": "@gmail-user",  
+    "GMAIL_PASS": "@gmail-pass",  
+    "PORT": "5000"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/api/index.js" 
+    }
+  ]
+}
